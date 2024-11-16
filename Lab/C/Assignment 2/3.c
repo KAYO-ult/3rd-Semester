@@ -17,7 +17,7 @@ int main() {
     printf("Enter the roll of the student: ");
     scanf("%d", &sptr->roll);
     printf("Enter the marks of the student: ");
-    scanf("%.2f", &sptr->marks);
+    scanf("%f", &sptr->marks);
     
     printf("Display the details of the student:\n");
     printf("Name:%s\n", sptr->name);
