@@ -6,18 +6,18 @@ class vehicle
     public:
         void input()
         {
-            cout<<"Enter the model no.:\n";
+            cout<<"Enter the model no. = \n";
             cin>>m;
-            cout<<"Enter the price:\n";
+            cout<<"Enter the price = \n";
             cin>>p;
-            cout<<"Enter the seat capacity:\n";
+            cout<<"Enter the seat capacity = \n";
             cin>>c;
         }
         void display()
         {
-            cout<<"Model no.:"<<m<<"\n";
-            cout<<"Price:"<<p<<"\n";
-            cout<<"Seat capacity:"<<c<<"\n";
+            cout<<"Model no. = "<<m<<"\n";
+            cout<<"Price = "<<p<<"\n";
+            cout<<"Seat capacity = "<<c<<"\n";
         }
 };
 
@@ -25,20 +25,16 @@ int main()
 {
   vehicle bus, car;
 
-  cout<<"Details of bus:\n";
+  cout<<"Details of bus = \n";
   bus.input();
-  cout<<"It is a public vehicle:\n";
+  cout<<"It is a public vehicle = \n";
   bus.display();
-  cout<<"\n\nDetails of car:\n";
+  cout<<"\n\nDetails of car = \n";
   car.input();
-  cout<<"It is a private vehicle:\n";
+  cout<<"It is a private vehicle = \n";
   car.display();
   return 0;
 }
-
-
-
-
 
 
 
