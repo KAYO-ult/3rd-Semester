@@ -1,1 +1,1 @@
-int m,int n
+getMatrixInput();
