@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // Function to input an array of 10 elements
-void input() {
+void inputArray() {
     int arr[10];
     printf("Enter 10 elements of the array: ");
     for(int i = 0; i < 10; i++) {
@@ -22,12 +22,12 @@ void DisplayArray() {
 int main() {
     // Call the function for array1
     printf("Array 1\n");
-    input();
+    inputArray();
     DisplayArray();
 
     // Call the function for array2
     printf("Array 2\n");
-    input();
+    inputArray();
     DisplayArray();
 
     return 0;
