@@ -3,8 +3,9 @@
 // Function to input an array of 10 elements
 void inputArray() {
     int arr[10];
-    printf("Enter 10 elements of the array: ");
+    printf("Enter 10 elements of the array\n");
     for(int i = 0; i < 10; i++) {
+        // printf("Element %d = ", i + 1);
         scanf("%d", &arr[i]);
     }
 }
