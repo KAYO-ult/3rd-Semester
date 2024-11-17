@@ -47,9 +47,10 @@ using namespace std;
 
 class searchelement
 {
-public:
+private:
     int arr[10], i, num, index;
 
+public:
     void inputArray()
     {
         cout << "Enter 10 elements for the array: ";
@@ -61,11 +62,6 @@ public:
 
     void search()
     {
-        cout << "\nThe array elements are: ";
-        for (i = 0; i < 10; i++)
-        {
-            cout << arr[i] << " ";
-        }
         cout << "\nEnter a Number to Search: ";
         cin >> num;
         index = -1; // Initialize index to -1 to indicate not found
@@ -81,6 +77,12 @@ public:
 
     void display()
     {
+        cout << "\nThe array elements are: ";
+        for (i = 0; i < 10; i++)
+        {
+            cout << arr[i] << " ";
+        }
+        
         if (index != -1)
         {
             cout << "\nFound at Index No. " << index + 1;
@@ -99,5 +101,42 @@ int main()
     ob1.inputArray(); // Get user input for the array
     ob1.search();     // Search for the number
     ob1.display();    // Display the result
+    
     return 0;
 }
+
+
+
+// #include<iostream>
+// using namespace std;
+// class searchelement
+// {
+//  public:
+//  int arr[10]={7, 5, 4, 8, 9, 11, 3, 0, 2, 1}, i, num, index, n;
+//  void search()
+//     {
+//     cout<<"\nThe array elements are 7, 5, 4, 8, 9, 11, 3, 0, 2, 1";
+//     cout<<"\nEnter a Number to Search: ";
+//     cin>>num;
+//     for(i=0; i<10; i++)
+//     {
+//         if(arr[i]==num)
+//         {
+//             index = i;
+//             break;
+//         }
+//     }
+//     }
+//     void display()
+//     {
+//     cout<<"\nFound at Index No."<<index+1;
+//     cout<<endl;
+//     }
+// };
+// int main()
+// {
+//     searchelement ob1;
+//     ob1.search();
+//     ob1.display();
+//     return 0;
+// }
