@@ -29,6 +29,7 @@ int main()
   bus.input();
   cout<<"It is a public vehicle = \n";
   bus.display();
+  
   cout<<"\n\nDetails of car = \n";
   car.input();
   cout<<"It is a private vehicle = \n";
